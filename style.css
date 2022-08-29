@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+ul {
+    background-color: blueviolet;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100vw;
+    height: 100vh;
+}
+
+li {
+    width: 32vw;
+    height: 30vh;
+    background-color: #8cacea;
+    margin: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.cell img {
+    width: 32vw;
+    height: 31vh;
+    /* dodać funkcję by było albo w albo h  */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.presentation {
+    background-color: rgb(21, 98, 100);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* powiększenie zdjęcia */
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img {
+    max-width: 80vw;
+    max-height: 80vh;
+    z-index: 200;
+    border: 10px solid black;
+}
